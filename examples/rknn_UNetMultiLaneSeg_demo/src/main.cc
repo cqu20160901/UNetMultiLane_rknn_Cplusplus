@@ -402,9 +402,9 @@ int main(int argc, char **argv)
 {
     printf("============= This is main ... ==============\n");
 
-    char model_path[256] = "/home/firefly/zhangqian/rknn/rknpu2_1.4.0_20220909/examples/rknn_UnetMUtilLaneSeg_demo/model/RK3588/UNet_mutilLane_202305011.rknn";
-    char image_path[256] = "/home/firefly/zhangqian/rknn/rknpu2_1.4.0_20220909/examples/rknn_UnetMUtilLaneSeg_demo/test.jpg";
-    char save_image_path[256] = "/home/firefly/zhangqian/rknn/rknpu2_1.4.0_20220909/examples/rknn_UnetMUtilLaneSeg_demo/test_result.jpg";
+    char model_path[256] = "/home/firefly/zhangqian/UNetMultiLane_rknn_Cplusplus/examples/rknn_UNetMultiLaneSeg_demo/model/RK3588/UNetMultiLane_seg.rknn";
+    char image_path[256] = "/home/firefly/zhangqian/UNetMultiLane_rknn_Cplusplus//examples/rknn_UNetMultiLaneSeg_demo/test.jpg";
+    char save_image_path[256] = "/home/firefly/zhangqian/UNetMultiLane_rknn_Cplusplus/rknn/examples/rknn_UNetMultiLaneSeg_demo/test_result.jpg";
 
     int ret = detect(model_path, image_path, save_image_path);
     printf("============= inference finished ! ==============\n");
